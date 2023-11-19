@@ -1,10 +1,13 @@
+import connector.DatabaseConnector;
 import dao.StudentDAO;
 import entity.Student;
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        DatabaseConnector.initializeDatabase();
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter student name:");
